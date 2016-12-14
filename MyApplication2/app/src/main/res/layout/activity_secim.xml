@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_secim"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.fatih.myapplication2.SecimActivity">
+
+    <CheckBox
+        android:text="Milliyet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbMilliyet"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:text="HaberTürk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbMilliyet"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/cbHaberTurk" />
+
+    <CheckBox
+        android:text="Haber7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cbHaberler"
+        android:layout_alignLeft="@+id/cbHurriyet"
+        android:layout_alignStart="@+id/cbHurriyet"
+        android:id="@+id/cbHaber7" />
+
+    <CheckBox
+        android:text="InternetHaber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbHaberTurk"
+        android:id="@+id/cbInternetHaber" />
+
+    <CheckBox
+        android:text="CNNTurk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbCnn"
+        android:layout_alignBaseline="@+id/cbInternetHaber"
+        android:layout_alignBottom="@+id/cbInternetHaber"
+        android:layout_alignLeft="@+id/cbHaberler"
+        android:layout_alignStart="@+id/cbHaberler" />
+
+    <CheckBox
+        android:text="MyNet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbMynet"
+        android:layout_alignBaseline="@+id/cbCnn"
+        android:layout_alignBottom="@+id/cbCnn"
+        android:layout_alignLeft="@+id/cbHaber7"
+        android:layout_alignStart="@+id/cbHaber7" />
+
+    <CheckBox
+        android:text="Haberler.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbHaberler"
+        android:layout_above="@+id/cbCnn"
+        android:layout_alignLeft="@+id/cbOnedio"
+        android:layout_alignStart="@+id/cbOnedio" />
+
+    <CheckBox
+        android:text="Hürriyet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbHurriyet"
+        android:layout_above="@+id/cbHaber7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:text="Onedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbOnedio"
+        android:layout_above="@+id/cbHaberler"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:text="ShiftDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbShift"
+        android:layout_alignBaseline="@+id/cbDH"
+        android:layout_alignBottom="@+id/cbDH"
+        android:layout_alignRight="@+id/tvtekno"
+        android:layout_alignEnd="@+id/tvtekno"
+        android:layout_toRightOf="@+id/cbCnn"
+        android:layout_toEndOf="@+id/cbCnn" />
+
+    <CheckBox
+        android:text="Dijital Rehberim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbDH"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/cbDijital" />
+
+    <CheckBox
+        android:text="Chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbShift"
+        android:layout_alignLeft="@+id/cbShift"
+        android:layout_alignStart="@+id/cbShift"
+        android:id="@+id/cbChip" />
+
+    <TextView
+        android:text="GÜNCEL SPOR SİTELERİ"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/cbChip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp" />
+
+    <CheckBox
+        android:text="FutbolAjans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/cbFutbolAjans" />
+
+    <CheckBox
+        android:text="FotoMaç"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/cbChip"
+        android:layout_alignStart="@+id/cbChip"
+        android:id="@+id/cbFotoMac" />
+
+    <CheckBox
+        android:text="Ntv Spor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbFutbolAjans"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/cbNtv" />
+
+    <CheckBox
+        android:text="Amk Spor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbFotoMac"
+        android:layout_alignLeft="@+id/cbFotoMac"
+        android:layout_alignStart="@+id/cbFotoMac"
+        android:id="@+id/cbAmk" />
+
+    <TextView
+        android:text="GÜNCEL HABER SİTELERİ"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/cbHurriyet"
+        android:layout_alignRight="@+id/cbHaber7"
+        android:layout_alignEnd="@+id/cbHaber7" />
+
+    <TextView
+        android:text="TEKNOLOJİ HABER SİTELERİ"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/tvtekno"
+        android:layout_below="@+id/cbInternetHaber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:text="DonanımHaber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbDH"
+        android:layout_below="@+id/tvtekno"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
